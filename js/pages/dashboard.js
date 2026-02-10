@@ -130,7 +130,7 @@ function renderAnnouncements(data) {
     </a>
   `).join('');
 
-  render('#dashboard-announcements', section('Объявления', html));
+  render('#dashboard-announcements', `<div id="announcements">${section('Объявления', html)}</div>`);
 }
 
 function renderQuickLinks(data) {
