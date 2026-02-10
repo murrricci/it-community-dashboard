@@ -118,17 +118,30 @@ function renderRecentChanges(data) {
   render('#dashboard-changes', section('Последние изменения', html, 'changelog.html', 'Вся история'));
 }
 
+const ANN_ICONS = {
+  info: { icon: 'ℹ️', bg: 'var(--color-status-review-bg)', color: 'var(--color-status-review)' },
+  event: { icon: '📅', bg: 'var(--color-prof-devops-bg)', color: 'var(--color-prof-devops)' },
+  update: { icon: '🔄', bg: 'var(--color-status-accepted-bg)', color: 'var(--color-status-accepted)' },
+  action: { icon: '⚡', bg: 'var(--color-status-draft-bg)', color: 'var(--color-status-draft)' },
+};
+
 function renderAnnouncements(data) {
   const announcements = data.announcements || [];
   if (announcements.length === 0) return;
 
-  const html = announcements.map(ann => `
-    <a href="${ann.link}" class="c-announcement">
-      <div class="c-announcement__date">${formatDate(ann.date, { month: 'short', year: undefined })}</div>
-      <div class="c-announcement__title">${ann.title}</div>
-      <div class="c-announcement__text">${ann.text}</div>
-    </a>
-  `).join('');
+  const html = announcements.map(ann => {
+    const t = ANN_ICONS[ann.type] || ANN_ICONS.info;
+    return `
+      <a href="${ann.link}" class="c-announcement">
+        <div class="c-announcement__icon" style="background:${t.bg}; color:${t.color}">${t.icon}</div>
+        <div class="c-announcement__body">
+          <div class="c-announcement__date">${formatDate(ann.date, { month: 'short', year: undefined })}</div>
+          <div class="c-announcement__title">${ann.title}</div>
+          <div class="c-announcement__text">${ann.text}</div>
+        </div>
+      </a>
+    `;
+  }).join('');
 
   render('#dashboard-announcements', `<div id="announcements">${section('Объявления', html)}</div>`);
 }
