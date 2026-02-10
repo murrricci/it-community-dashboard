@@ -1,0 +1,122 @@
+[
+  {
+    "id": "m-ivanov",
+    "name": "Алексей Иванов",
+    "role": "lead",
+    "professions": ["backend"],
+    "contributions": 34,
+    "joinedAt": "2025-02-01",
+    "bio": "Tech Lead бэкенд-сообщества. Автор стандартов API и код-ревью.",
+    "avatar": null
+  },
+  {
+    "id": "m-petrova",
+    "name": "Мария Петрова",
+    "role": "lead",
+    "professions": ["frontend"],
+    "contributions": 28,
+    "joinedAt": "2025-02-15",
+    "bio": "Лид фронтенд-сообщества. Эксперт по компонентным архитектурам и дизайн-системам.",
+    "avatar": null
+  },
+  {
+    "id": "m-kuznetsov",
+    "name": "Дмитрий Кузнецов",
+    "role": "lead",
+    "professions": ["qa"],
+    "contributions": 22,
+    "joinedAt": "2025-03-01",
+    "bio": "Лид QA-сообщества. Специалист по стратегии тестирования и автоматизации.",
+    "avatar": null
+  },
+  {
+    "id": "m-sidorov",
+    "name": "Игорь Сидоров",
+    "role": "lead",
+    "professions": ["devops"],
+    "contributions": 31,
+    "joinedAt": "2025-02-01",
+    "bio": "Лид DevOps-сообщества. Архитектор CI/CD и инфраструктуры.",
+    "avatar": null
+  },
+  {
+    "id": "m-volkova",
+    "name": "Анна Волкова",
+    "role": "lead",
+    "professions": ["mobile"],
+    "contributions": 18,
+    "joinedAt": "2025-04-01",
+    "bio": "Лид мобильного сообщества. Специалист по кросс-платформенной разработке.",
+    "avatar": null
+  },
+  {
+    "id": "m-morozov",
+    "name": "Павел Морозов",
+    "role": "lead",
+    "professions": ["data"],
+    "contributions": 15,
+    "joinedAt": "2025-05-01",
+    "bio": "Лид сообщества дата-инженерии. Эксперт по ETL и хранилищам данных.",
+    "avatar": null
+  },
+  {
+    "id": "m-kozlov",
+    "name": "Сергей Козлов",
+    "role": "expert",
+    "professions": ["backend", "data"],
+    "contributions": 19,
+    "joinedAt": "2025-03-15",
+    "bio": "Эксперт по бэкенд-разработке и дата-инженерии.",
+    "avatar": null
+  },
+  {
+    "id": "m-novikova",
+    "name": "Елена Новикова",
+    "role": "contributor",
+    "professions": ["backend", "frontend"],
+    "contributions": 12,
+    "joinedAt": "2025-06-01",
+    "bio": "Full-stack разработчик, активный контрибьютор в стандарты.",
+    "avatar": null
+  },
+  {
+    "id": "m-fedorov",
+    "name": "Андрей Фёдоров",
+    "role": "expert",
+    "professions": ["devops", "mobile"],
+    "contributions": 16,
+    "joinedAt": "2025-04-15",
+    "bio": "Эксперт по DevOps и мобильному CI/CD.",
+    "avatar": null
+  },
+  {
+    "id": "m-sokolova",
+    "name": "Ольга Соколова",
+    "role": "expert",
+    "professions": ["qa", "mobile"],
+    "contributions": 14,
+    "joinedAt": "2025-05-15",
+    "bio": "Эксперт по тестированию мобильных приложений.",
+    "avatar": null
+  },
+  {
+    "id": "m-lebedev",
+    "name": "Николай Лебедев",
+    "role": "newcomer",
+    "professions": ["backend"],
+    "contributions": 3,
+    "joinedAt": "2025-12-01",
+    "bio": "Новый участник бэкенд-сообщества.",
+    "avatar": null
+  },
+  {
+    "id": "m-popova",
+    "name": "Ирина Попова",
+    "role": "newcomer",
+    "professions": ["frontend"],
+    "contributions": 2,
+    "joinedAt": "2026-01-10",
+    "bio": "Новый участник фронтенд-сообщества.",
+    "avatar": null
+  }
+]

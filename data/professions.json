@@ -1,0 +1,162 @@
+[
+  {
+    "id": "backend",
+    "name": "Backend-разработка",
+    "shortName": "Backend",
+    "icon": "⚙️",
+    "color": "backend",
+    "description": "Проектирование и разработка серверных приложений, API, микросервисов, работа с базами данных и очередями сообщений.",
+    "competencies": [
+      { "name": "Проектирование API", "level": "advanced" },
+      { "name": "Работа с БД", "level": "advanced" },
+      { "name": "Микросервисная архитектура", "level": "intermediate" },
+      { "name": "Тестирование", "level": "intermediate" },
+      { "name": "Мониторинг и логирование", "level": "intermediate" },
+      { "name": "Безопасность", "level": "basic" }
+    ],
+    "practices": ["code-review", "api-design", "unit-testing", "ci-cd", "logging", "db-migrations"],
+    "lead": "m-ivanov",
+    "experts": ["m-petrova", "m-sidorov"],
+    "contributors": ["m-kozlov", "m-novikova", "m-morozov"],
+    "resources": [
+      { "title": "Гайд по проектированию REST API", "url": "#", "type": "guide" },
+      { "title": "Шаблон микросервиса", "url": "#", "type": "template" },
+      { "title": "Чеклист код-ревью", "url": "#", "type": "checklist" }
+    ],
+    "lastUpdated": "2025-12-15",
+    "version": "2.1"
+  },
+  {
+    "id": "frontend",
+    "name": "Frontend-разработка",
+    "shortName": "Frontend",
+    "icon": "🎨",
+    "color": "frontend",
+    "description": "Создание пользовательских интерфейсов, SPA-приложений, работа с дизайн-системами, обеспечение доступности и производительности.",
+    "competencies": [
+      { "name": "Компонентная архитектура", "level": "advanced" },
+      { "name": "Управление состоянием", "level": "advanced" },
+      { "name": "Доступность (a11y)", "level": "intermediate" },
+      { "name": "Производительность", "level": "intermediate" },
+      { "name": "Тестирование UI", "level": "intermediate" },
+      { "name": "Дизайн-системы", "level": "basic" }
+    ],
+    "practices": ["code-review", "component-design", "unit-testing", "ci-cd", "a11y-audit", "performance-budget"],
+    "lead": "m-petrova",
+    "experts": ["m-kuznetsov", "m-volkova"],
+    "contributors": ["m-novikova", "m-fedorov", "m-sokolova"],
+    "resources": [
+      { "title": "Гайд по компонентной архитектуре", "url": "#", "type": "guide" },
+      { "title": "Чеклист доступности", "url": "#", "type": "checklist" },
+      { "title": "Настройка Performance Budget", "url": "#", "type": "guide" }
+    ],
+    "lastUpdated": "2026-01-10",
+    "version": "1.8"
+  },
+  {
+    "id": "qa",
+    "name": "Обеспечение качества",
+    "shortName": "QA",
+    "icon": "🔍",
+    "color": "qa",
+    "description": "Тестирование программного обеспечения, автоматизация тестов, управление качеством, метрики и процессы обеспечения качества.",
+    "competencies": [
+      { "name": "Тест-дизайн", "level": "advanced" },
+      { "name": "Автоматизация тестирования", "level": "advanced" },
+      { "name": "Нагрузочное тестирование", "level": "intermediate" },
+      { "name": "API-тестирование", "level": "intermediate" },
+      { "name": "Тестирование безопасности", "level": "basic" },
+      { "name": "Метрики качества", "level": "intermediate" }
+    ],
+    "practices": ["test-strategy", "test-automation", "code-review", "ci-cd", "bug-triage", "regression-testing"],
+    "lead": "m-kuznetsov",
+    "experts": ["m-sokolova"],
+    "contributors": ["m-kozlov", "m-morozov"],
+    "resources": [
+      { "title": "Шаблон тест-плана", "url": "#", "type": "template" },
+      { "title": "Гайд по автоматизации", "url": "#", "type": "guide" },
+      { "title": "Метрики качества — дашборд", "url": "#", "type": "dashboard" }
+    ],
+    "lastUpdated": "2025-11-20",
+    "version": "1.5"
+  },
+  {
+    "id": "devops",
+    "name": "DevOps / SRE",
+    "shortName": "DevOps",
+    "icon": "🚀",
+    "color": "devops",
+    "description": "Автоматизация инфраструктуры, CI/CD пайплайны, контейнеризация, оркестрация, мониторинг и обеспечение надёжности систем.",
+    "competencies": [
+      { "name": "CI/CD пайплайны", "level": "advanced" },
+      { "name": "Контейнеризация", "level": "advanced" },
+      { "name": "IaC (Terraform, Ansible)", "level": "intermediate" },
+      { "name": "Мониторинг и алертинг", "level": "advanced" },
+      { "name": "Оркестрация (K8s)", "level": "intermediate" },
+      { "name": "Безопасность инфраструктуры", "level": "basic" }
+    ],
+    "practices": ["ci-cd", "iac", "monitoring", "incident-management", "code-review", "logging"],
+    "lead": "m-sidorov",
+    "experts": ["m-ivanov", "m-fedorov"],
+    "contributors": ["m-morozov"],
+    "resources": [
+      { "title": "Стандарт CI/CD пайплайнов", "url": "#", "type": "guide" },
+      { "title": "Runbook шаблон", "url": "#", "type": "template" },
+      { "title": "Чеклист безопасности инфраструктуры", "url": "#", "type": "checklist" }
+    ],
+    "lastUpdated": "2026-01-25",
+    "version": "2.3"
+  },
+  {
+    "id": "mobile",
+    "name": "Мобильная разработка",
+    "shortName": "Mobile",
+    "icon": "📱",
+    "color": "mobile",
+    "description": "Разработка мобильных приложений для iOS и Android, кросс-платформенные решения, оптимизация производительности на мобильных устройствах.",
+    "competencies": [
+      { "name": "Нативная разработка", "level": "advanced" },
+      { "name": "Кросс-платформа", "level": "intermediate" },
+      { "name": "UI/UX мобильных приложений", "level": "advanced" },
+      { "name": "Оффлайн-режим", "level": "intermediate" },
+      { "name": "Push-уведомления", "level": "intermediate" },
+      { "name": "Публикация в сторы", "level": "basic" }
+    ],
+    "practices": ["code-review", "unit-testing", "ci-cd", "a11y-audit", "performance-budget", "component-design"],
+    "lead": "m-volkova",
+    "experts": ["m-fedorov"],
+    "contributors": ["m-sokolova", "m-novikova"],
+    "resources": [
+      { "title": "Гайд по архитектуре мобильных приложений", "url": "#", "type": "guide" },
+      { "title": "Чеклист публикации в сторы", "url": "#", "type": "checklist" }
+    ],
+    "lastUpdated": "2025-10-30",
+    "version": "1.2"
+  },
+  {
+    "id": "data",
+    "name": "Дата-инженерия",
+    "shortName": "Data",
+    "icon": "📊",
+    "color": "data",
+    "description": "Проектирование и поддержка дата-пайплайнов, хранилищ данных, ETL-процессов, аналитических платформ и ML-инфраструктуры.",
+    "competencies": [
+      { "name": "ETL/ELT пайплайны", "level": "advanced" },
+      { "name": "Хранилища данных", "level": "advanced" },
+      { "name": "SQL и аналитика", "level": "advanced" },
+      { "name": "Потоковая обработка", "level": "intermediate" },
+      { "name": "ML-инфраструктура", "level": "basic" },
+      { "name": "Data Quality", "level": "intermediate" }
+    ],
+    "practices": ["code-review", "ci-cd", "logging", "monitoring", "db-migrations", "test-automation"],
+    "lead": "m-morozov",
+    "experts": ["m-kozlov"],
+    "contributors": ["m-sidorov"],
+    "resources": [
+      { "title": "Стандарт именования таблиц", "url": "#", "type": "guide" },
+      { "title": "Шаблон дата-пайплайна", "url": "#", "type": "template" }
+    ],
+    "lastUpdated": "2025-12-01",
+    "version": "1.0"
+  }
+]

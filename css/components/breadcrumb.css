@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Breadcrumb Component
+   ========================================================================== */
+
+.c-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.c-breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.c-breadcrumb__link {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.c-breadcrumb__link:hover {
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.c-breadcrumb__current {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.c-breadcrumb__sep {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-xs);
+}

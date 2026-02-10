@@ -1,0 +1,22 @@
+{
+  "practices": ["code-review", "ci-cd", "unit-testing", "api-design", "logging", "monitoring", "component-design", "a11y-audit", "test-strategy", "test-automation", "iac", "incident-management", "performance-budget", "db-migrations", "bug-triage", "regression-testing"],
+  "professions": ["backend", "frontend", "qa", "devops", "mobile", "data"],
+  "matrix": {
+    "code-review":        { "backend": "adopted", "frontend": "adopted", "qa": "adopted", "devops": "adopted", "mobile": "adopted", "data": "adopted" },
+    "ci-cd":              { "backend": "adopted", "frontend": "adopted", "qa": "na", "devops": "adopted", "mobile": "in-progress", "data": "adopted" },
+    "unit-testing":       { "backend": "adopted", "frontend": "adopted", "qa": "na", "devops": "na", "mobile": "in-progress", "data": "na" },
+    "api-design":         { "backend": "adopted", "frontend": "na", "qa": "na", "devops": "na", "mobile": "na", "data": "na" },
+    "logging":            { "backend": "adopted", "frontend": "na", "qa": "na", "devops": "in-progress", "mobile": "na", "data": "in-progress" },
+    "monitoring":         { "backend": "in-progress", "frontend": "na", "qa": "na", "devops": "in-progress", "mobile": "na", "data": "planned" },
+    "component-design":   { "backend": "na", "frontend": "adopted", "qa": "na", "devops": "na", "mobile": "in-progress", "data": "na" },
+    "a11y-audit":         { "backend": "na", "frontend": "in-progress", "qa": "na", "devops": "na", "mobile": "planned", "data": "na" },
+    "test-strategy":      { "backend": "planned", "frontend": "planned", "qa": "in-progress", "devops": "na", "mobile": "na", "data": "na" },
+    "test-automation":    { "backend": "na", "frontend": "na", "qa": "adopted", "devops": "na", "mobile": "na", "data": "na" },
+    "iac":                { "backend": "na", "frontend": "na", "qa": "na", "devops": "adopted", "mobile": "na", "data": "na" },
+    "incident-management":{ "backend": "planned", "frontend": "na", "qa": "na", "devops": "planned", "mobile": "na", "data": "na" },
+    "performance-budget": { "backend": "na", "frontend": "planned", "qa": "na", "devops": "na", "mobile": "planned", "data": "na" },
+    "db-migrations":      { "backend": "adopted", "frontend": "na", "qa": "na", "devops": "na", "mobile": "na", "data": "in-progress" },
+    "bug-triage":         { "backend": "na", "frontend": "na", "qa": "in-progress", "devops": "na", "mobile": "na", "data": "na" },
+    "regression-testing": { "backend": "na", "frontend": "na", "qa": "adopted", "devops": "na", "mobile": "na", "data": "na" }
+  }
+}

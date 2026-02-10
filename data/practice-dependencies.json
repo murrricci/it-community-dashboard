@@ -1,0 +1,18 @@
+[
+  { "practice": "ci-cd", "requires": [], "recommends": ["code-review", "unit-testing"] },
+  { "practice": "unit-testing", "requires": [], "recommends": ["code-review"] },
+  { "practice": "code-review", "requires": [], "recommends": [] },
+  { "practice": "api-design", "requires": ["code-review"], "recommends": ["ci-cd"] },
+  { "practice": "logging", "requires": [], "recommends": ["monitoring"] },
+  { "practice": "monitoring", "requires": ["logging"], "recommends": ["incident-management"] },
+  { "practice": "incident-management", "requires": ["monitoring"], "recommends": ["logging"] },
+  { "practice": "component-design", "requires": [], "recommends": ["code-review", "unit-testing"] },
+  { "practice": "a11y-audit", "requires": ["component-design"], "recommends": ["ci-cd"] },
+  { "practice": "test-strategy", "requires": [], "recommends": ["unit-testing", "test-automation"] },
+  { "practice": "test-automation", "requires": ["ci-cd"], "recommends": ["test-strategy"] },
+  { "practice": "iac", "requires": [], "recommends": ["code-review", "ci-cd"] },
+  { "practice": "performance-budget", "requires": ["ci-cd"], "recommends": ["monitoring"] },
+  { "practice": "db-migrations", "requires": [], "recommends": ["code-review", "ci-cd"] },
+  { "practice": "bug-triage", "requires": [], "recommends": ["test-strategy"] },
+  { "practice": "regression-testing", "requires": ["test-automation"], "recommends": ["ci-cd"] }
+]

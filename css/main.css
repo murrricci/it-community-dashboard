@@ -1,0 +1,44 @@
+/* ==========================================================================
+   IT Community Dashboard — Main CSS Aggregator
+   ========================================================================== */
+
+/* ── Foundation ── */
+@import 'variables.css';
+@import 'reset.css';
+@import 'base.css';
+@import 'layout.css';
+
+/* ── Components ── */
+@import 'components/header.css';
+@import 'components/sidebar.css';
+@import 'components/cards.css';
+@import 'components/badges.css';
+@import 'components/timeline.css';
+@import 'components/calendar.css';
+@import 'components/tabs.css';
+@import 'components/filters.css';
+@import 'components/modal.css';
+@import 'components/avatar.css';
+@import 'components/progress.css';
+@import 'components/matrix.css';
+@import 'components/accordion.css';
+@import 'components/tag.css';
+@import 'components/breadcrumb.css';
+@import 'components/toast.css';
+
+/* ── Pages ── */
+@import 'pages/dashboard.css';
+@import 'pages/professions.css';
+@import 'pages/practices.css';
+@import 'pages/rfc.css';
+@import 'pages/events.css';
+@import 'pages/members.css';
+@import 'pages/changelog.css';
+@import 'pages/glossary.css';
+@import 'pages/onboarding.css';
+
+/* ── Responsive ── */
+@import 'responsive.css';
+
+/* ── Print ── */
+@import 'print.css';

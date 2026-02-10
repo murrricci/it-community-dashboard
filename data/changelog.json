@@ -1,0 +1,152 @@
+[
+  {
+    "id": "cl-001",
+    "date": "2026-01-25",
+    "type": "added",
+    "description": "Добавлена практика «Управление инцидентами» (черновик)",
+    "profession": "devops",
+    "author": "m-sidorov",
+    "relatedRfc": "rfc-011",
+    "version": "2.3"
+  },
+  {
+    "id": "cl-002",
+    "date": "2026-01-20",
+    "type": "changed",
+    "description": "Обновлён RFC-006: добавлены требования к дашбордам мониторинга",
+    "profession": "devops",
+    "author": "m-sidorov",
+    "relatedRfc": "rfc-006",
+    "version": "2.3"
+  },
+  {
+    "id": "cl-003",
+    "date": "2026-01-15",
+    "type": "added",
+    "description": "Создан RFC-012: Security Champions",
+    "profession": "backend",
+    "author": "m-ivanov",
+    "relatedRfc": "rfc-012",
+    "version": "2.1"
+  },
+  {
+    "id": "cl-004",
+    "date": "2026-01-10",
+    "type": "changed",
+    "description": "Обновлён стандарт компонентной разработки: добавлены требования к TypeScript-типам",
+    "profession": "frontend",
+    "author": "m-petrova",
+    "relatedRfc": "rfc-007",
+    "version": "1.8"
+  },
+  {
+    "id": "cl-005",
+    "date": "2025-12-15",
+    "type": "changed",
+    "description": "Обновлён стандарт API: добавлен раздел о версионировании через заголовки",
+    "profession": "backend",
+    "author": "m-ivanov",
+    "relatedRfc": "rfc-004",
+    "version": "2.1"
+  },
+  {
+    "id": "cl-006",
+    "date": "2025-12-10",
+    "type": "added",
+    "description": "Создан RFC-011: Процесс управления инцидентами",
+    "profession": "devops",
+    "author": "m-sidorov",
+    "relatedRfc": "rfc-011",
+    "version": "2.2"
+  },
+  {
+    "id": "cl-007",
+    "date": "2025-12-01",
+    "type": "added",
+    "description": "Добавлена практика «Performance Budget» (черновик)",
+    "profession": "frontend",
+    "author": "m-petrova",
+    "relatedRfc": null,
+    "version": "1.7"
+  },
+  {
+    "id": "cl-008",
+    "date": "2025-11-20",
+    "type": "changed",
+    "description": "Обновлён стандарт тестирования: уточнены критерии покрытия для legacy-кода",
+    "profession": "qa",
+    "author": "m-kuznetsov",
+    "relatedRfc": "rfc-003",
+    "version": "1.5"
+  },
+  {
+    "id": "cl-009",
+    "date": "2025-11-01",
+    "type": "changed",
+    "description": "RFC-009 переведён в статус ревью",
+    "profession": "qa",
+    "author": "m-kuznetsov",
+    "relatedRfc": "rfc-009",
+    "version": "1.5"
+  },
+  {
+    "id": "cl-010",
+    "date": "2025-10-30",
+    "type": "deprecated",
+    "description": "Устаревшие рекомендации по использованию React Native заменены на Flutter",
+    "profession": "mobile",
+    "author": "m-volkova",
+    "relatedRfc": null,
+    "version": "1.2"
+  },
+  {
+    "id": "cl-011",
+    "date": "2025-10-15",
+    "type": "added",
+    "description": "RFC-008: Обязательный аудит доступности переведён в ревью",
+    "profession": "frontend",
+    "author": "m-volkova",
+    "relatedRfc": "rfc-008",
+    "version": "1.6"
+  },
+  {
+    "id": "cl-012",
+    "date": "2025-09-15",
+    "type": "added",
+    "description": "Добавлена практика «Процесс триажа багов»",
+    "profession": "qa",
+    "author": "m-kuznetsov",
+    "relatedRfc": null,
+    "version": "1.4"
+  },
+  {
+    "id": "cl-013",
+    "date": "2025-09-01",
+    "type": "changed",
+    "description": "RFC-006 переведён в статус ревью, начато голосование",
+    "profession": "devops",
+    "author": "m-sidorov",
+    "relatedRfc": "rfc-006",
+    "version": "2.1"
+  },
+  {
+    "id": "cl-014",
+    "date": "2025-08-12",
+    "type": "added",
+    "description": "Принят RFC-007: Стандарт компонентной разработки UI",
+    "profession": "frontend",
+    "author": "m-petrova",
+    "relatedRfc": "rfc-007",
+    "version": "1.5"
+  },
+  {
+    "id": "cl-015",
+    "date": "2025-07-05",
+    "type": "added",
+    "description": "Принят RFC-005: Стандарт структурированного логирования",
+    "profession": "backend",
+    "author": "m-sidorov",
+    "relatedRfc": "rfc-005",
+    "version": "2.0"
+  }
+]

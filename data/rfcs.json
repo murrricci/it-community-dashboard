@@ -1,0 +1,255 @@
+[
+  {
+    "id": "rfc-001",
+    "number": 1,
+    "title": "Обязательное код-ревью для всех репозиториев",
+    "author": "m-ivanov",
+    "status": "accepted",
+    "createdAt": "2025-03-01",
+    "updatedAt": "2025-03-15",
+    "description": "Предложение ввести обязательное код-ревью минимум одним инженером для каждого pull request перед мержем в основную ветку.",
+    "body": "## Мотивация\n\nТекущий процесс не требует обязательного ревью, что приводит к неравномерному качеству кода и снижению распространения знаний.\n\n## Предложение\n\n1. Все PR требуют минимум 1 approval\n2. Для критичных сервисов — 2 approval\n3. SLA на ревью: 4 рабочих часа\n4. Автоматическое назначение ревьюеров\n\n## Альтернативы\n\nРассматривалось парное программирование как альтернатива, но оно требует больших временных затрат.",
+    "relatedPractice": "code-review",
+    "professions": ["backend", "frontend", "qa", "devops", "mobile", "data"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-03-01", "comment": "Первый черновик" },
+      { "status": "review", "date": "2025-03-05", "comment": "Отправлен на ревью сообщества" },
+      { "status": "accepted", "date": "2025-03-15", "comment": "Единогласно принят" }
+    ],
+    "voting": { "for": 12, "against": 0, "abstain": 1 },
+    "discussions": [
+      "Нужно ли требовать 2 ревьюера для инфраструктурных изменений?",
+      "Как обеспечить SLA в 4 часа при работе в разных часовых поясах?"
+    ]
+  },
+  {
+    "id": "rfc-002",
+    "number": 2,
+    "title": "Стандартизация CI/CD пайплайнов",
+    "author": "m-sidorov",
+    "status": "accepted",
+    "createdAt": "2025-03-20",
+    "updatedAt": "2025-04-01",
+    "description": "Создание стандартных шаблонов CI/CD пайплайнов для основных технологических стеков.",
+    "body": "## Мотивация\n\nКаждая команда настраивает CI/CD по-своему, что усложняет поддержку и отладку.\n\n## Предложение\n\n1. Создать shared-библиотеку пайплайнов\n2. Шаблоны для: Java, Go, Node.js, Python\n3. Обязательные этапы: lint, test, build, deploy-staging\n4. Опциональные: security-scan, performance-test",
+    "relatedPractice": "ci-cd",
+    "professions": ["backend", "frontend", "devops", "mobile", "data"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-03-20", "comment": "Инициатива DevOps-сообщества" },
+      { "status": "review", "date": "2025-03-25", "comment": "Обсуждение на митапе" },
+      { "status": "accepted", "date": "2025-04-01", "comment": "Принят с доработками" }
+    ],
+    "voting": { "for": 10, "against": 1, "abstain": 2 },
+    "discussions": [
+      "Нужны ли отдельные шаблоны для монорепо?",
+      "Как мигрировать существующие пайплайны?"
+    ]
+  },
+  {
+    "id": "rfc-003",
+    "number": 3,
+    "title": "Минимальный порог покрытия юнит-тестами",
+    "author": "m-kuznetsov",
+    "status": "accepted",
+    "createdAt": "2025-04-15",
+    "updatedAt": "2025-05-10",
+    "description": "Установка минимального порога покрытия кода юнит-тестами в 70% для новых модулей.",
+    "body": "## Мотивация\n\nОтсутствие стандарта покрытия приводит к тому, что тесты пишутся непоследовательно.\n\n## Предложение\n\n1. Минимальное покрытие для нового кода: 70%\n2. Для legacy: план постепенного повышения\n3. Блокировка CI при падении покрытия\n4. Исключения для автогенерируемого кода",
+    "relatedPractice": "unit-testing",
+    "professions": ["backend", "frontend", "mobile"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-04-15", "comment": "Предложение QA-сообщества" },
+      { "status": "review", "date": "2025-04-25", "comment": "Бурное обсуждение порога" },
+      { "status": "accepted", "date": "2025-05-10", "comment": "Принят порог 70% (изначально предлагалось 80%)" }
+    ],
+    "voting": { "for": 8, "against": 3, "abstain": 2 },
+    "discussions": [
+      "80% или 70% — какой порог оптимален?",
+      "Нужно ли учитывать покрытие интеграционных тестов?"
+    ]
+  },
+  {
+    "id": "rfc-004",
+    "number": 4,
+    "title": "Единый стандарт REST API",
+    "author": "m-ivanov",
+    "status": "accepted",
+    "createdAt": "2025-05-20",
+    "updatedAt": "2025-06-20",
+    "description": "Стандарт проектирования REST API: именование, версионирование, обработка ошибок, пагинация.",
+    "body": "## Мотивация\n\nНесогласованные API между сервисами затрудняют интеграцию и увеличивают время onboarding.\n\n## Предложение\n\n1. Версионирование через URL (/v1/, /v2/)\n2. Единый формат ошибок\n3. Cursor-based пагинация\n4. OpenAPI 3.0 спецификация обязательна",
+    "relatedPractice": "api-design",
+    "professions": ["backend"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-05-20", "comment": "" },
+      { "status": "review", "date": "2025-06-01", "comment": "" },
+      { "status": "accepted", "date": "2025-06-20", "comment": "" }
+    ],
+    "voting": { "for": 9, "against": 0, "abstain": 1 },
+    "discussions": []
+  },
+  {
+    "id": "rfc-005",
+    "number": 5,
+    "title": "Стандарт структурированного логирования",
+    "author": "m-sidorov",
+    "status": "accepted",
+    "createdAt": "2025-06-10",
+    "updatedAt": "2025-07-05",
+    "description": "Единый формат логов в JSON с обязательными полями для всех сервисов.",
+    "body": "## Мотивация\n\nРазный формат логов затрудняет поиск и анализ проблем в распределённых системах.\n\n## Предложение\n\nОбязательные поля: timestamp, level, service, traceId, spanId, message.\nРекомендуемые: userId, requestId, duration.",
+    "relatedPractice": "logging",
+    "professions": ["backend", "devops", "data"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-06-10", "comment": "" },
+      { "status": "review", "date": "2025-06-20", "comment": "" },
+      { "status": "accepted", "date": "2025-07-05", "comment": "" }
+    ],
+    "voting": { "for": 11, "against": 0, "abstain": 0 },
+    "discussions": []
+  },
+  {
+    "id": "rfc-006",
+    "number": 6,
+    "title": "Обязательный мониторинг RED-метрик",
+    "author": "m-sidorov",
+    "status": "review",
+    "createdAt": "2025-08-15",
+    "updatedAt": "2026-01-20",
+    "description": "Каждый сервис должен экспортировать метрики Rate, Errors, Duration и иметь настроенные алерты.",
+    "body": "## Мотивация\n\nНе все сервисы имеют адекватный мониторинг, что приводит к позднему обнаружению проблем.\n\n## Предложение\n\n1. Обязательные RED-метрики для каждого эндпоинта\n2. Дашборд для каждого сервиса\n3. Алерты с привязкой к runbook\n4. Ежемесячный обзор метрик",
+    "relatedPractice": "monitoring",
+    "professions": ["backend", "devops", "data"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-08-15", "comment": "Инициатива SRE" },
+      { "status": "review", "date": "2025-09-01", "comment": "На ревью у бэкенд-сообщества" }
+    ],
+    "voting": { "for": 6, "against": 2, "abstain": 3 },
+    "discussions": [
+      "Как определить пороги для алертов?",
+      "Кто ответственен за настройку мониторинга — разработчик или SRE?"
+    ]
+  },
+  {
+    "id": "rfc-007",
+    "number": 7,
+    "title": "Стандарт компонентной разработки UI",
+    "author": "m-petrova",
+    "status": "accepted",
+    "createdAt": "2025-07-20",
+    "updatedAt": "2025-08-12",
+    "description": "Единый подход к разработке UI-компонентов: структура, пропсы, документация, тесты.",
+    "body": "## Мотивация\n\nДублирование компонентов между проектами, отсутствие единой дизайн-системы.\n\n## Предложение\n\n1. Атомарный дизайн: атомы → молекулы → организмы\n2. Storybook для каждого компонента\n3. Минимальный набор тестов\n4. Версионирование через semver",
+    "relatedPractice": "component-design",
+    "professions": ["frontend", "mobile"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-07-20", "comment": "" },
+      { "status": "review", "date": "2025-08-01", "comment": "" },
+      { "status": "accepted", "date": "2025-08-12", "comment": "" }
+    ],
+    "voting": { "for": 7, "against": 0, "abstain": 1 },
+    "discussions": []
+  },
+  {
+    "id": "rfc-008",
+    "number": 8,
+    "title": "Обязательный аудит доступности",
+    "author": "m-volkova",
+    "status": "review",
+    "createdAt": "2025-09-25",
+    "updatedAt": "2026-01-15",
+    "description": "Введение обязательных проверок доступности (WCAG 2.1 AA) для всех пользовательских интерфейсов.",
+    "body": "## Мотивация\n\nТекущие продукты не всегда доступны для людей с ограниченными возможностями.\n\n## Предложение\n\n1. Автоматические проверки axe-core в CI\n2. Ручной аудит раз в квартал\n3. WCAG 2.1 Level AA как минимальный стандарт\n4. Обучение разработчиков",
+    "relatedPractice": "a11y-audit",
+    "professions": ["frontend", "mobile"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-09-25", "comment": "" },
+      { "status": "review", "date": "2025-10-15", "comment": "На ревью" }
+    ],
+    "voting": { "for": 5, "against": 1, "abstain": 4 },
+    "discussions": [
+      "Реалистичен ли WCAG AA для всех продуктов?",
+      "Как приоритизировать исправления доступности?"
+    ]
+  },
+  {
+    "id": "rfc-009",
+    "number": 9,
+    "title": "Документ стратегии тестирования",
+    "author": "m-kuznetsov",
+    "status": "review",
+    "createdAt": "2025-10-10",
+    "updatedAt": "2026-01-10",
+    "description": "Каждый проект должен иметь документ стратегии тестирования, описывающий подход к качеству.",
+    "body": "## Мотивация\n\nОтсутствие единого подхода к тестированию в проектах.\n\n## Предложение\n\n1. Шаблон стратегии тестирования\n2. Обязательные разделы: пирамида тестов, критерии качества, ответственности\n3. Ревью QA-лидом",
+    "relatedPractice": "test-strategy",
+    "professions": ["qa", "backend", "frontend"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-10-10", "comment": "" },
+      { "status": "review", "date": "2025-11-01", "comment": "" }
+    ],
+    "voting": { "for": 4, "against": 2, "abstain": 3 },
+    "discussions": [
+      "Не будет ли это лишней бюрократией для небольших проектов?"
+    ]
+  },
+  {
+    "id": "rfc-010",
+    "number": 10,
+    "title": "Infrastructure as Code — обязательный подход",
+    "author": "m-sidorov",
+    "status": "accepted",
+    "createdAt": "2025-04-01",
+    "updatedAt": "2025-04-15",
+    "description": "Вся инфраструктура управляется через код с обязательным ревью и CI/CD.",
+    "body": "## Мотивация\n\nРучные изменения инфраструктуры приводят к расхождению сред и сложности воспроизведения.\n\n## Предложение\n\n1. Terraform для облачных ресурсов\n2. Ansible для конфигурации\n3. Git как единый источник истины\n4. CI/CD для планирования и применения",
+    "relatedPractice": "iac",
+    "professions": ["devops"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-04-01", "comment": "" },
+      { "status": "review", "date": "2025-04-08", "comment": "" },
+      { "status": "accepted", "date": "2025-04-15", "comment": "" }
+    ],
+    "voting": { "for": 8, "against": 0, "abstain": 0 },
+    "discussions": []
+  },
+  {
+    "id": "rfc-011",
+    "number": 11,
+    "title": "Процесс управления инцидентами",
+    "author": "m-sidorov",
+    "status": "draft",
+    "createdAt": "2025-12-01",
+    "updatedAt": "2026-01-28",
+    "description": "Формализация процесса реагирования на инциденты: классификация, эскалация, постмортемы.",
+    "body": "## Мотивация\n\nТекущий процесс реагирования на инциденты хаотичен и зависит от конкретных людей.\n\n## Предложение\n\n1. 4 уровня критичности (P1-P4)\n2. Автоматическая эскалация\n3. Шаблон постмортема\n4. Регулярные учения (gameday)",
+    "relatedPractice": "incident-management",
+    "professions": ["devops", "backend"],
+    "statusHistory": [
+      { "status": "draft", "date": "2025-12-01", "comment": "Начальный черновик" }
+    ],
+    "voting": { "for": 0, "against": 0, "abstain": 0 },
+    "discussions": [
+      "Нужен ли выделенный incident commander?",
+      "Как интегрировать с существующими системами алертинга?"
+    ]
+  },
+  {
+    "id": "rfc-012",
+    "number": 12,
+    "title": "Внедрение Security Champions",
+    "author": "m-ivanov",
+    "status": "draft",
+    "createdAt": "2026-01-15",
+    "updatedAt": "2026-02-01",
+    "description": "Назначение Security Champion в каждой команде для повышения культуры безопасности.",
+    "body": "## Мотивация\n\nБезопасность часто остаётся вне зоны ответственности разработчиков.\n\n## Предложение\n\n1. Один Security Champion на команду\n2. Ежемесячные встречи сообщества\n3. Обучение OWASP Top 10\n4. Проверка PR на безопасность",
+    "relatedPractice": null,
+    "professions": ["backend", "frontend", "devops"],
+    "statusHistory": [
+      { "status": "draft", "date": "2026-01-15", "comment": "Идея от Backend-сообщества" }
+    ],
+    "voting": { "for": 0, "against": 0, "abstain": 0 },
+    "discussions": []
+  }
+]
