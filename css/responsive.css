@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Responsive — Mobile-first breakpoints
+   ========================================================================== */
+
+/* ── Below 768px: Mobile ── */
+@media (max-width: 767px) {
+  .l-sidebar {
+    transform: translateX(-100%);
+  }
+
+  .l-sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  .l-main {
+    margin-left: 0;
+  }
+
+  .l-content {
+    padding: var(--space-4);
+  }
+
+  .c-header__burger {
+    display: flex;
+  }
+
+  .c-header__search {
+    min-width: auto;
+    flex: 1;
+  }
+
+  .c-header__search-text {
+    display: none;
+  }
+
+  .c-header__search-kbd {
+    display: none;
+  }
+
+  .l-grid--2,
+  .l-grid--3,
+  .l-grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .l-grid--auto-fill {
+    grid-template-columns: 1fr;
+  }
+
+  .c-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .c-filters__search {
+    max-width: none;
+  }
+
+  .c-view-toggle {
+    margin-left: 0;
+  }
+
+  .c-calendar__day {
+    min-height: 50px;
+  }
+
+  .c-event-card {
+    flex-direction: column;
+  }
+
+  .c-event-card__date-box {
+    flex-direction: row;
+    gap: var(--space-2);
+    justify-content: flex-start;
+  }
+
+  .c-status-timeline {
+    flex-wrap: wrap;
+  }
+
+  .c-modal {
+    margin: var(--space-4);
+  }
+
+  .c-modal-backdrop {
+    padding: var(--space-4);
+    align-items: center;
+  }
+
+  .c-toast-container {
+    left: var(--space-4);
+    right: var(--space-4);
+    bottom: var(--space-4);
+  }
+
+  .c-toast {
+    min-width: auto;
+    max-width: none;
+  }
+
+  .l-page-header__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .c-header__prof-select {
+    display: none;
+  }
+}
+
+/* ── 640px+ ── */
+@media (min-width: 640px) {
+  .l-grid--auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+/* ── 768px+ Tablet ── */
+@media (min-width: 768px) {
+  .l-grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .l-grid--auto-fill-sm {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+/* ── 1024px+ Desktop ── */
+@media (min-width: 1024px) {
+  .l-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .l-grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ── 1280px+ Large Desktop ── */
+@media (min-width: 1280px) {
+  .l-content {
+    padding: var(--space-8);
+  }
+}

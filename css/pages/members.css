@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Members Page Styles
+   ========================================================================== */
+
+.p-members__leaderboard {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+.p-members__leaderboard-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-4);
+}
+
+.p-members__leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.p-members__leaderboard-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+}
+
+.p-members__leaderboard-rank {
+  width: 24px;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-tertiary);
+}
+
+.p-members__leaderboard-rank--1 { color: #ffd700; }
+.p-members__leaderboard-rank--2 { color: #c0c0c0; }
+.p-members__leaderboard-rank--3 { color: #cd7f32; }
+
+.p-members__leaderboard-info {
+  flex: 1;
+}
+
+.p-members__leaderboard-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.p-members__leaderboard-score {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent-blue);
+}
+
+.p-members__community-section {
+  margin-bottom: var(--space-6);
+}
+
+.p-members__community-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}

@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Tabs Component
+   ========================================================================== */
+
+.c-tabs {
+  border-bottom: 1px solid var(--color-border-primary);
+  margin-bottom: var(--space-6);
+}
+
+.c-tabs__list {
+  display: flex;
+  gap: var(--space-1);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c-tabs__tab {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.c-tabs__tab:hover {
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-border-hover);
+}
+
+.c-tabs__tab.is-active {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+  border-bottom-color: var(--color-accent-blue);
+}
+
+.c-tabs__tab-count {
+  margin-left: var(--space-2);
+  padding: 1px 6px;
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+}
+
+.c-tabs__panel {
+  display: none;
+}
+
+.c-tabs__panel.is-active {
+  display: block;
+}

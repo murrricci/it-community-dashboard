@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Progress Component
+   ========================================================================== */
+
+.c-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.c-progress__bar {
+  flex: 1;
+  height: 6px;
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.c-progress__fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-blue);
+  transition: width var(--transition-slow);
+}
+
+.c-progress__fill--green { background: var(--color-status-accepted); }
+.c-progress__fill--yellow { background: var(--color-status-draft); }
+.c-progress__fill--red { background: var(--color-status-rejected); }
+.c-progress__fill--purple { background: var(--color-accent-purple); }
+
+.c-progress__label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  min-width: 36px;
+  text-align: right;
+}
+
+/* ── Multi-segment progress ── */
+
+.c-progress-multi {
+  display: flex;
+  height: 8px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  background: var(--color-bg-tertiary);
+}
+
+.c-progress-multi__segment {
+  height: 100%;
+  transition: width var(--transition-slow);
+}
+
+/* ── Circular progress ── */
+
+.c-progress-ring {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-progress-ring__svg {
+  transform: rotate(-90deg);
+}
+
+.c-progress-ring__track {
+  fill: none;
+  stroke: var(--color-bg-tertiary);
+}
+
+.c-progress-ring__fill {
+  fill: none;
+  stroke: var(--color-accent-blue);
+  stroke-linecap: round;
+  transition: stroke-dashoffset var(--transition-slow);
+}
+
+.c-progress-ring__text {
+  position: absolute;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}

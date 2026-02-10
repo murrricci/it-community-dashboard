@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  :root {
+    --color-bg-primary: #fff;
+    --color-bg-secondary: #fff;
+    --color-bg-tertiary: #f6f8fa;
+    --color-text-primary: #000;
+    --color-text-secondary: #333;
+    --color-text-tertiary: #666;
+    --color-border-primary: #d0d7de;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .l-sidebar,
+  .l-header,
+  .l-overlay,
+  .c-header__search,
+  .c-header__burger,
+  .c-filters,
+  .c-view-toggle,
+  .c-toast-container,
+  .c-modal-backdrop {
+    display: none !important;
+  }
+
+  .l-main {
+    margin-left: 0;
+  }
+
+  .l-content {
+    max-width: none;
+    padding: 0;
+  }
+
+  .c-card,
+  .c-content-card,
+  .c-event-card,
+  .c-member-card {
+    border: 1px solid #d0d7de;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .c-badge {
+    border: 1px solid currentColor;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript"]::after {
+    content: none;
+  }
+}

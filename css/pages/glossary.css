@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Glossary Page Styles
+   ========================================================================== */
+
+.p-glossary__alpha-nav {
+  display: flex;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+  padding: var(--space-3);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--radius-lg);
+}
+
+.p-glossary__alpha-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.p-glossary__alpha-btn:hover {
+  background: var(--color-bg-hover);
+  color: var(--color-text-primary);
+}
+
+.p-glossary__alpha-btn.is-active {
+  background: var(--color-accent-blue);
+  color: #fff;
+}
+
+.p-glossary__alpha-btn.is-disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.p-glossary__letter-group {
+  margin-bottom: var(--space-6);
+}
+
+.p-glossary__letter {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-blue);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--color-border-primary);
+}
+
+.p-glossary__term {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-3);
+}
+
+.p-glossary__term-name {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-2);
+}
+
+.p-glossary__term-def {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-2);
+}
+
+.p-glossary__term-related {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  font-size: var(--font-size-xs);
+}

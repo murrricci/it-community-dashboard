@@ -1,0 +1,141 @@
+/* ==========================================================================
+   Timeline Component
+   ========================================================================== */
+
+.c-timeline {
+  position: relative;
+  padding-left: var(--space-8);
+}
+
+.c-timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border-primary);
+}
+
+.c-timeline__group {
+  margin-bottom: var(--space-6);
+}
+
+.c-timeline__date {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-3);
+  position: relative;
+}
+
+.c-timeline__date::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-8) + 7px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-bg-secondary);
+  border: 2px solid var(--color-accent-blue);
+}
+
+.c-timeline__item {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-2);
+  position: relative;
+}
+
+.c-timeline__item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-8) + 9px);
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-border-primary);
+}
+
+.c-timeline__item-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+
+.c-timeline__item-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+
+.c-timeline__item-meta {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.c-timeline__item-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+}
+
+/* ── Status timeline (for RFC) ── */
+
+.c-status-timeline {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) 0;
+}
+
+.c-status-timeline__step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.c-status-timeline__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-border-primary);
+  flex-shrink: 0;
+}
+
+.c-status-timeline__dot.is-complete {
+  background: var(--color-status-accepted);
+}
+
+.c-status-timeline__dot.is-current {
+  background: var(--color-status-review);
+  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+}
+
+.c-status-timeline__dot.is-rejected {
+  background: var(--color-status-rejected);
+}
+
+.c-status-timeline__label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.c-status-timeline__line {
+  flex: 1;
+  height: 2px;
+  background: var(--color-border-primary);
+  min-width: 20px;
+}
+
+.c-status-timeline__line.is-complete {
+  background: var(--color-status-accepted);
+}

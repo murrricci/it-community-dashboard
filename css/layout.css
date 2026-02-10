@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Layout — Grid system, containers
+   ========================================================================== */
+
+.l-app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.l-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  overflow-y: auto;
+  z-index: var(--z-sticky);
+  background: var(--color-bg-secondary);
+  border-right: 1px solid var(--color-border-primary);
+  transition: transform var(--transition-slow);
+}
+
+.l-main {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.l-header {
+  position: sticky;
+  top: 0;
+  height: var(--header-height);
+  z-index: var(--z-sticky);
+  background: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border-primary);
+}
+
+.l-content {
+  flex: 1;
+  padding: var(--container-padding);
+  max-width: var(--content-max-width);
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ── Grid helpers ── */
+
+.l-grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.l-grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.l-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.l-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.l-grid--auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.l-grid--auto-fill-sm {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+/* ── Page header ── */
+
+.l-page-header {
+  margin-bottom: var(--space-8);
+}
+
+.l-page-header__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-2);
+}
+
+.l-page-header__subtitle {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-md);
+}
+
+/* ── Section ── */
+
+.l-section {
+  margin-bottom: var(--space-8);
+}
+
+.l-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.l-section__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.l-section__link {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-link);
+}
+
+/* ── Mobile overlay ── */
+
+.l-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg-overlay);
+  z-index: calc(var(--z-sticky) - 1);
+}
+
+.l-overlay.is-active {
+  display: block;
+}

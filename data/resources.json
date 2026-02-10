@@ -1,0 +1,12 @@
+[
+  { "id": "res-001", "title": "Гайд по проектированию REST API", "url": "#", "type": "guide", "profession": "backend" },
+  { "id": "res-002", "title": "Шаблон микросервиса", "url": "#", "type": "template", "profession": "backend" },
+  { "id": "res-003", "title": "Чеклист код-ревью", "url": "#", "type": "checklist", "profession": "backend" },
+  { "id": "res-004", "title": "Гайд по компонентной архитектуре", "url": "#", "type": "guide", "profession": "frontend" },
+  { "id": "res-005", "title": "Чеклист доступности", "url": "#", "type": "checklist", "profession": "frontend" },
+  { "id": "res-006", "title": "Шаблон тест-плана", "url": "#", "type": "template", "profession": "qa" },
+  { "id": "res-007", "title": "Стандарт CI/CD пайплайнов", "url": "#", "type": "guide", "profession": "devops" },
+  { "id": "res-008", "title": "Runbook шаблон", "url": "#", "type": "template", "profession": "devops" },
+  { "id": "res-009", "title": "Гайд по архитектуре мобильных приложений", "url": "#", "type": "guide", "profession": "mobile" },
+  { "id": "res-010", "title": "Стандарт именования таблиц", "url": "#", "type": "guide", "profession": "data" }
+]

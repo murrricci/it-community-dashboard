@@ -1,0 +1,115 @@
+/* ==========================================================================
+   Dashboard Page Styles
+   ========================================================================== */
+
+.p-dashboard__metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.p-dashboard__two-col {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-6);
+}
+
+.p-dashboard__contributors {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.p-dashboard__contributor {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+}
+
+.p-dashboard__contributor-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.p-dashboard__contributor-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.p-dashboard__contributor-count {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+}
+
+.p-dashboard__quick-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+.p-dashboard__quick-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.p-dashboard__quick-link:hover {
+  border-color: var(--color-border-hover);
+  background: var(--color-bg-hover);
+  text-decoration: none;
+}
+
+.p-dashboard__quick-link-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-lg);
+  flex-shrink: 0;
+}
+
+.p-dashboard__quick-link-text {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.p-dashboard__quick-link-sub {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 1023px) {
+  .p-dashboard__metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .p-dashboard__two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .p-dashboard__quick-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  .p-dashboard__metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .p-dashboard__quick-links {
+    grid-template-columns: 1fr;
+  }
+}

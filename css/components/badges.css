@@ -1,0 +1,139 @@
+/* ==========================================================================
+   Badge Components
+   ========================================================================== */
+
+.c-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  line-height: 1.6;
+}
+
+/* ── Status badges ── */
+
+.c-badge--draft {
+  background: var(--color-status-draft-bg);
+  color: var(--color-status-draft);
+}
+
+.c-badge--review {
+  background: var(--color-status-review-bg);
+  color: var(--color-status-review);
+}
+
+.c-badge--accepted {
+  background: var(--color-status-accepted-bg);
+  color: var(--color-status-accepted);
+}
+
+.c-badge--rejected {
+  background: var(--color-status-rejected-bg);
+  color: var(--color-status-rejected);
+}
+
+.c-badge--deprecated {
+  background: var(--color-status-deprecated-bg);
+  color: var(--color-status-deprecated);
+}
+
+/* ── Profession badges ── */
+
+.c-badge--backend {
+  background: var(--color-prof-backend-bg);
+  color: var(--color-prof-backend);
+}
+
+.c-badge--frontend {
+  background: var(--color-prof-frontend-bg);
+  color: var(--color-prof-frontend);
+}
+
+.c-badge--qa {
+  background: var(--color-prof-qa-bg);
+  color: var(--color-prof-qa);
+}
+
+.c-badge--devops {
+  background: var(--color-prof-devops-bg);
+  color: var(--color-prof-devops);
+}
+
+.c-badge--mobile {
+  background: var(--color-prof-mobile-bg);
+  color: var(--color-prof-mobile);
+}
+
+.c-badge--data {
+  background: var(--color-prof-data-bg);
+  color: var(--color-prof-data);
+}
+
+/* ── Role badges ── */
+
+.c-badge--lead {
+  background: rgba(163, 113, 247, 0.15);
+  color: var(--color-accent-purple);
+}
+
+.c-badge--expert {
+  background: rgba(88, 166, 255, 0.15);
+  color: var(--color-accent-blue);
+}
+
+.c-badge--contributor {
+  background: rgba(63, 185, 80, 0.15);
+  color: var(--color-accent-green);
+}
+
+.c-badge--newcomer {
+  background: rgba(139, 148, 158, 0.15);
+  color: var(--color-text-secondary);
+}
+
+/* ── Event type badges ── */
+
+.c-badge--meetup {
+  background: rgba(88, 166, 255, 0.15);
+  color: var(--color-accent-blue);
+}
+
+.c-badge--workshop {
+  background: rgba(163, 113, 247, 0.15);
+  color: var(--color-accent-purple);
+}
+
+.c-badge--review-event {
+  background: rgba(240, 136, 62, 0.15);
+  color: var(--color-accent-orange);
+}
+
+.c-badge--demo {
+  background: rgba(63, 185, 80, 0.15);
+  color: var(--color-accent-green);
+}
+
+.c-badge--retro {
+  background: rgba(247, 120, 186, 0.15);
+  color: var(--color-accent-pink);
+}
+
+/* ── Small badge (for counters) ── */
+
+.c-badge--sm {
+  padding: 1px 6px;
+  font-size: 10px;
+}
+
+/* ── Dot indicator ── */
+
+.c-badge__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
